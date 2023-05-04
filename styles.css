@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+.tiza {
+  background-image: url('img/tiza.jpg');
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: var(--color1);
+  background-color: var(--color2);
+}
 
 /* Variables */
 :root {
@@ -11,24 +18,26 @@
         --menu-height: 80px;
     }
     
+    
     /* General styles */
     * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     }
-
-    body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--text-color);
-    background-color: var(--color-gris-oscuro);
-    }
     
-    a {
+    body {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--text-color);
+      background-color: var(--color-negro);
+      }
+      
+  
+   a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-color)
     }
     
     
@@ -64,27 +73,89 @@
     .menu li:last-child {
     margin-right: 0;
     }
-    
+
     .menu a {
-    color: var(--text-color);
+    background-image: url('img/tiza.jpg');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     transition: color 0.2s ease-in-out;
     }
     
     .menu a:hover {
-    color: var(--color-gris-claro);
+    color: var(--text-color);
     }
+   
+    /* Estilos de la sección "Sobre nosotros" */
+.hero {
+    padding: 3rem 0;
+    background-image: url('img/fondopizarra.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero-info {
+    flex: 1 1 50%;
+    padding-right: 2rem;
+  }
+  .hero-info p>span {
+    font-weight: 800px;
+}
+    
+.hero-image {
+    flex: 1 1 50%;
 
-    @media screen and (max-width: 768px) {
+}
+
+  
+.tiza {
+    background-image: url('img/tiza.jpg');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  
+.hero-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+.hero-info p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+.hero-image img {
+    width: 100%;
+    height: 100%;
+  }
+  div span{
+    margin-right: 10px;
+    
+  }
+  
+
+@media screen and (max-width: 768px) {
     nav {
     justify-content: space-between;
     height: auto;
     padding: 20px;
     }
-    
-    
-    
-    
-}
+  }
+
+
+
